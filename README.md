@@ -34,9 +34,8 @@ python scan_devices.py
 #### Step 5: Change device address as found in Step 4
 ```
 cd src
-nano BLEDataReceiver.py
+nano BLEDataReceiver.py //declare device address in self.char_uuid 
 ```
-declare device address in self.char_uuid 
 
 #### Step 6: Launch CustomTkinter GUI
 ```
