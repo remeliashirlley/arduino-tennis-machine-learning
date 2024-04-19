@@ -34,10 +34,49 @@ python scan_devices.py
 #### Step 5: Change device address as found in Step 4
 ```
 cd src
-nano BLEDataReceiver.py //declare device address in self.char_uuid 
+nano BLEDataReceiver.py
 ```
+declare device address in self.char_uuid 
 
 #### Step 6: Launch CustomTkinter GUI
 ```
 python main.py
 ```
+
+</br></br>
+
+## File Structure
+.
+├── README.md
+├── data                    //folder with collected data
+│   ├── backhand_high.csv
+│   ├── backhand_low.csv
+│   ├── forehand_high.csv
+│   └── forehand_low.csv
+│   ├── ....
+├── data_collection         //scripts to collect new data
+│   ├── capture
+│   │   └── capture.ino     //arduino script to send sensor data through BLE
+│   └── data_collection.py  //python script to read sensor data from BLE
+├── inference               //folder for inference
+│   ├── DebugLog.h
+│   ├── inference.ino       //arduino script to run inference
+│   └── model.h
+├── model                   //TF model training
+│   ├── model.cc
+│   ├── model.h
+│   ├── model.ipynb
+│   ├── model.tflite
+│   ├── model_best.keras
+│   ├── model_final.keras
+│   └── model_quantized.tflite
+├── plots
+│   ├── ....
+├── scan_devices.py         //script to get Arduino BLE device address
+├── src                     //source folder to run game
+│   ├── BLEDataReceiver.py
+│   ├── app.py
+│   ├── assets
+│   │   ├── ....
+│   └── main.py             //main script to run game
+└── ....
