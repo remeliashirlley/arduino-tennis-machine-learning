@@ -17,5 +17,4 @@
 
 #### Step 4: Scan for Devices
 Run the Python script `scan_devices.py` to scan for BLE devices:
-```python scan_devices.py```
-
+'''python scan_devices.py'''
