@@ -1,6 +1,6 @@
 ## Project Setup
 
-### Setting Up Conda Environment
+### a. Setting Up Conda Environment
 
 #### Step 1: Create a New Conda Environment
 ```
@@ -18,7 +18,7 @@ pip install -r requirements.txt
 ```
 
 
-### Get Arduino BLE device address
+### b. Get Arduino BLE device address
 - To connect to your Arduino BLE device, you'll need to find its device address. Follow these steps:
 
 #### Step 4: Scan for Devices
