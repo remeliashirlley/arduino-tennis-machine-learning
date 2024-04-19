@@ -46,6 +46,7 @@ python main.py
 </br></br>
 
 ## File Structure
+```
 .
 ├── README.md
 ├── data                    //folder with collected data
@@ -80,3 +81,4 @@ python main.py
 │   │   ├── ....
 │   └── main.py             //main script to run game
 └── ....
+```
